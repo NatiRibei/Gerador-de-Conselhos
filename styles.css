@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.content{
+    background: hsl(217, 19%, 24%);
+    padding: 100px 50px;
+    width: 40%;
+    min-width:500px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.adviceTitle{
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+    font-style: bold;
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+   
+    
+    
+}
+
+.adviceText{
+    color: hsl(192, 24%, 88%);
+    font-size: 30px;
+    font-style: bold;
+
+}
