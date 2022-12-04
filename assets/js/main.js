@@ -1,5 +1,5 @@
-const titulo = document.getElementById('adviceTitle');
-const texto = document.getElementById('adviceText');
+const titulo = document.getElementsByClassName("adviceTitle");
+const texto = document.getElementsByClassName("adviceText");
 
 
 
@@ -28,10 +28,14 @@ function main(){
     //armazena o ID do conselho em conselhoID
     let conselhoID = conselhopronto.slip.id;
     console.log(conselhoTexto);
+
+    console.log(titulo);
+
     
     //document.getElementById('adviceText') = conselhoTexto;
     //textoConselho.appendChild(conselhoTexto);
     //titulo.textContent = conselhoTexto;
 }
-
+/*criar o botão e uma função de clique para que quando clicar no botão, atribuir
+o texto e o ID do conselho armazenados para os elementos HTML */
 main();
