@@ -1,6 +1,6 @@
 const titulo = document.getElementsByClassName("adviceTitle");
 const texto = document.getElementsByClassName("adviceText");
-
+let textoTela;
 
 
 // função que consome a API
@@ -28,8 +28,11 @@ function main(){
     //armazena o ID do conselho em conselhoID
     let conselhoID = conselhopronto.slip.id;
     console.log(conselhoTexto);
+    document.getElementsByClassName("text").innerHTML = conselhoTexto;
+    
+  
 
-    console.log(titulo);
+    console.log(texto);
 
     
     //document.getElementById('adviceText') = conselhoTexto;
