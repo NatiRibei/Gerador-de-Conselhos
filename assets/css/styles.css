@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     
 }
-.content{
+.container{
     background: hsl(217, 19%, 24%);
     padding: 100px 50px;
     width: 40%;
@@ -37,7 +37,7 @@ body{
     
 }
 
-.adviceText{
+blockquote{
     color: hsl(192, 24%, 88%);
     font-size: 30px;
     font-style: bold;

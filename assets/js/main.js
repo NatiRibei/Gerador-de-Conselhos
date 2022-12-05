@@ -1,6 +1,13 @@
-const titulo = document.getElementsByClassName("adviceTitle");
-const texto = document.getElementsByClassName("adviceText");
+const titulo = document.querySelector(".adviceTitle");
+const texto = document.querySelector("blockquote");
+const adviceButton = document.querySelector("button");
 let textoTela;
+console.log(adviceButton);
+adviceButton.addEventListener("click", main);
+
+window.onload = () => {
+  main();
+};
 
 
 // função que consome a API
@@ -24,11 +31,13 @@ function main(){
     let conselhopronto = JSON.parse(conselho);
     console.log(conselhopronto);
     //armazena o texto do conselho em conselhoTexto
-    let conselhoTexto = conselhopronto.slip.advice;
+    let conselhos = conselhopronto.slip;
     //armazena o ID do conselho em conselhoID
-    let conselhoID = conselhopronto.slip.id;
-    console.log(conselhoTexto);
-    document.getElementsByClassName("text").innerHTML = conselhoTexto;
+    let conselhoTexto = conselhos.advice;
+    let conselhoID = conselhos.id;
+    console.log(conselhos.advice);
+    texto.innerHTML = `"${conselhoTexto}"`;
+    titulo.innerHTML = `#${conselhoID}`;
     
   
 
@@ -41,4 +50,5 @@ function main(){
 }
 /*criar o botão e uma função de clique para que quando clicar no botão, atribuir
 o texto e o ID do conselho armazenados para os elementos HTML */
+
 main();
