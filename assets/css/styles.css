@@ -4,6 +4,7 @@
     font-family: 'Manrope', sans-serif;
     align-items: center;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -12,17 +13,18 @@ body{
     font-size: 28px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     
 }
 .container{
     background: hsl(217, 19%, 24%);
-    padding: 100px 50px;
+    padding: 50px 50px;
     width: 40%;
     min-width:500px;
     border-radius: 20px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .adviceTitle{
@@ -30,8 +32,8 @@ body{
     font-size: 15px;
     font-style: bold;
     display: flex;
-    align-items: flex-start;
-    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
    
     
     
@@ -41,14 +43,30 @@ blockquote{
     color: hsl(192, 24%, 88%);
     font-size: 30px;
     font-style: bold;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
-button{
-    
-    background-color:hsl(150, 100%, 66%);
-    border-radius: 50px;
-    border-color: rgba(0, 0, 0, 0);
+.container button{
+    height: 4rem;
+    width: 4rem;
+
+    background:  hsl(150, 100%, 66%);
+
+    border: 0;
+    border-radius: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.container button:hover {
+    -webkit-box-shadow: 5px 5px 43px -2px  hsl(150, 100%, 66%);
+    box-shadow: 5px 5px 43px -2px  hsl(150, 100%, 66%);
 }
