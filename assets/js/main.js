@@ -37,7 +37,7 @@ function main(){
     let conselhoID = conselhos.id;
     console.log(conselhos.advice);
     texto.innerHTML = `"${conselhoTexto}"`;
-    titulo.innerHTML = `#${conselhoID}`;
+    titulo.innerHTML = "Advice "+`#${conselhoID}`;
     
   
 
