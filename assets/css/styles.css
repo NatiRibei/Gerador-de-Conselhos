@@ -24,9 +24,11 @@ body{
     width: 40%;
     min-width:500px;
     border-radius: 20px;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     align-content:center;
+    flex-direction: column;
 }
 
 .adviceTitle{
