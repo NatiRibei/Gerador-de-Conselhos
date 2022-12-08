@@ -2,19 +2,19 @@
     margin: 0px;
     padding: 10px;
     font-family: 'Manrope', sans-serif;
-    align-items: center;
-    box-sizing: border-box;
-    
+     
 }
 
 body{
+    
     height: 100vh;
     background-color: hsl(218, 23%, 16%);
     font-size: 28px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
-    flex-direction: column;
+    /* flex-direction: column; */
+   
     
 }
 .container{
@@ -26,6 +26,7 @@ body{
     border-radius: 20px;
     align-items: center;
     justify-content: space-around;
+    align-content:center;
 }
 
 .adviceTitle{
@@ -44,23 +45,20 @@ blockquote{
     color: hsl(192, 24%, 88%);
     font-size: 30px;
     font-style: bold;
-    align-items: center;
-    justify-content: space-around;
-
 }
 
-.container button{
+button{
     height: 4rem;
     width: 4rem;
-
+    
     background:  hsl(150, 100%, 66%);
 
     border: 0;
     border-radius: 4rem;
 
     display: flex;
+    
     align-items: center;
-    justify-content: space-around;
 
 
     transition: box-shadow 0.2s;
@@ -71,7 +69,7 @@ blockquote{
     
 }
 
-.container button:hover {
+button:hover {
     -webkit-box-shadow: 5px 5px 43px -2px  hsl(150, 100%, 66%);
     box-shadow: 5px 5px 43px -2px  hsl(150, 100%, 66%);
 }
