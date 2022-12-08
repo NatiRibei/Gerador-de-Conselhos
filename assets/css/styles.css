@@ -11,9 +11,9 @@ body{
     background-color: hsl(218, 23%, 16%);
     font-size: 28px;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-around;
-    /* flex-direction: column; */
+    flex-direction: column;
    
     
 }
